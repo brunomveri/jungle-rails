@@ -10,7 +10,7 @@
         </thead>
         <tbody>
           <% @order.line_items.each do |item| %>
-            <%= render '/carts/item', product: item.product, quantity: item.quantity.to_i %>
+            <%= render 'item_order', product: item.product, quantity: item.quantity.to_i %>
           <% end %>
         </tbody>
         <tfoot>
